@@ -1,0 +1,105 @@
+main {
+font-family: 'inter', sans-serif;
+max-width: 680px;
+min-height: 100vh;
+padding: 78px 70px 88px;
+
+margin: 0 auto;
+background-color: #fafafa;
+background-image: url(../images/design/background\ image\ _1.svg);
+background-repeat: no-repeat;
+background-position: top 52px right -25px;
+}
+.header {
+    width: 100%;
+    color: $main-color;
+    
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+
+    margin-bottom: 83px;
+}
+    &__logo { 
+        position: relative;
+        padding-left: 34px;
+        font-family: 'Ubuntu', sans-serif;
+
+        svg { 
+            position: absolute;
+            left: 0;
+            top: -4px;
+        }
+    }
+    td { 
+        width:50%;
+
+        &:last-child {
+            text-align: right;
+        }
+    }
+    .cta-block {
+        h1 {
+            font-family: 'Inter';
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 58px;
+        
+            color: $heading-color;
+        
+            margin-bottom: 25px;
+        }
+    
+        p {
+            max-width: 500px;
+            font-size: 18px;
+            line-height: 27px;
+        }
+    }
+    .advantages {
+        position: relative;
+    }
+    .advantages-table {
+        &__info { // .advantages-table__info
+            padding: 20px 10px;
+    
+            p {
+                font-size: 14px;
+                line-height: 20px;
+            }
+    
+            p:first-child { 
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 22px;
+                margin-bottom: 10px;
+            }
+        }
+    
+        td { 
+            vertical-align: middle;
+        }
+    }
+    
+    .section {
+        position: relative;
+        padding: 40px 0;
+    
+        &--border {
+            &::before {
+                content: '';
+                position: absolute;
+                
+                height: 2px;
+                left: 20px;
+                right: 20px;
+    
+                background-color: #dcdbdb;
+            }
+    
+            &::before {
+                top: 0;
+            }
+        }
+     }
+    
